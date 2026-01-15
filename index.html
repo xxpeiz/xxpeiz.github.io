@@ -29,14 +29,6 @@
                     <a href="files/undergraduate grade and ranking.pdf" target="_blank" class="button" data-en="🎓 GPA Certificate" data-zh="🎓 GPA/排名证明">🎓 GPA Certificate</a>
                 </div>
             </div>
-            <div class="carousel-container">
-                <img src="images/photo2.jpg" class="carousel-image active" alt="Xinling Li Photo 1">
-                <img src="images/photo3.jpg" class="carousel-image" alt="Xinling Li Photo 2">
-                <img src="images/photo4.jpg" class="carousel-image" alt="Xinling Li Photo 3">
-                <img src="images/photo1.jpg" class="carousel-image" alt="Xinling Li Photo 4">
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
-            </div>
         </div>
     </header>
 
@@ -73,53 +65,114 @@
             </section>
 
             <section>
-                <h2 data-en="🔬 Research Internship" data-zh="🔬 研究实习经历">🔬 Research Internship</h2>
-                <div class="experience-item">
-                    <h3 data-en="Guangming Laboratory" data-zh="光明实验室">Guangming Laboratory</h3>
-                    <p data-en="Advisor: Dr. Wenhao Jiang | Medical LLMs" data-zh="导师：蒋文豪博士 | 医疗大模型">Advisor: Dr. Wenhao Jiang | Medical LLMs</p>
-                    <ul data-en="<li>Developed a fully automated Supervised Fine-Tuning (SFT) pipeline.</li><li>Proposed answer-guided self-distillation to enhance clinical reasoning.</li>"
-                        data-zh="<li>开发了全自动有监督微调（SFT）流水线。</li><li>提出答案引导的自蒸馏机制，显著提升医疗复杂场景下的逻辑推理。</li>">
-                        <li>Developed a fully automated Supervised Fine-Tuning (SFT) pipeline.</li>
-                        <li>Proposed answer-guided self-distillation to enhance clinical reasoning.</li>
-                    </ul>
+                <h2 data-en="💻 Projects" data-zh="💻 个人项目">💻 Projects</h2>
+
+                <div class="project-item">
+                    <div class="details">
+                        <h3 data-en="Organic Farm Production-Sales Synergetic Analysis System" data-zh="有机农场产销协同分析系统">Organic Farm Production-Sales Synergetic Analysis System</h3>
+                        <p data-en="Full-stack Data Analysis Project" data-zh="全栈数据分析项目">Full-stack Data Analysis Project</p>
+                        <p class="date">12/2025</p>
+                    </div>
+                    <div class="content">
+                        <ul data-en="<li>Developed a Python-based visualization platform for 'Planting-Harvesting-Ordering' synergy.</li><li>Implemented user modules for plot management, crop growth tracking, and order fulfillment.</li><li>Built an admin dashboard with Python data analysis (yield per mu, pest warning, and VIP retention).</li><li>Designed decision-support thermal maps matching planting schedules with market demand.</li>"
+                            data-zh="<li>基于 Python 开发了“种植-采摘-订单”协同可视化平台，实现产销一体化分析。</li><li>实现用户端地块管理、作物生长周期追踪及订单售后履约模块。</li><li>构建管理员仪表盘，包含亩产量分析、病虫害预警及 VIP 客户复购周期分析。</li><li>利用数据热力图分析种植计划与订单匹配度，提供高需求作物加种等决策建议。</li>">
+                            <li>Developed a Python-based visualization platform for 'Planting-Harvesting-Ordering' synergy.</li>
+                            <li>Implemented user modules for plot management, crop growth tracking, and order fulfillment.</li>
+                            <li>Built an admin dashboard with Python data analysis (yield per mu, pest warning, and VIP retention).</li>
+                            <li>Designed decision-support thermal maps matching planting schedules with market demand.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="experience-item">
-                    <h3 data-en="Huawei (Ascend Computing)" data-zh="华为（昇腾计算）">Huawei (Ascend Computing)</h3>
-                    <p data-en="AI Intern | 12/2024 - 03/2025" data-zh="AI 实习生 | 2024年12月 - 2025年3月">AI Intern | 12/2024 - 03/2025</p>
-                    <ul data-en="<li>Contributed to vLLM open-source (Issue #11978, PR #11979).</li><li>Migrated vLLM to Ascend NPU platform.</li>"
-                        data-zh="<li>为 vLLM 开源社区贡献代码（Issue #11978, PR #11979）。</li><li>负责 vLLM 在昇腾 NPU 平台上的适配与算子迁移。</li>">
-                        <li>Contributed to vLLM open-source (Issue #11978, PR #11979).</li>
-                        <li>Migrated vLLM to Ascend NPU platform.</li>
-                    </ul>
+                <div class="project-item">
+                    <div class="details">
+                        <h3 data-en="Travel Strategy & Destination Management System" 
+                            data-zh="旅游攻略与目的地管理系统">
+                            Travel Strategy & Destination Management System
+                        </h3>
+                        <p data-en="Java-based Full-stack Web Application" 
+                           data-zh="基于 Java 的全栈 Web 应用程序">
+                                Java-based Full-stack Web Application
+                        </p>
+                        <p class="date">11/2025</p>
+                    </div>
+    
+                    <div class="content">
+                        <ul data-en="<li><b>Architectural Design:</b> Developed using the <b>MVC (Model-View-Controller)</b> pattern with Java, JSP, and JS, ensuring high cohesion and low coupling of the system.</li>
+                                    <li><b>Multi-Role Permission System:</b> Designed distinct functional modules for <b>Administrators</b> (content auditing, destination management, user control) and <b>General Users</b> (strategy sharing, hotel booking).</li>
+                                    <li><b>Core Functional Modules:</b> Implemented dynamic 'Seasonal Recommended Cities', intelligent destination retrieval, and a travelogue interaction system (support for likes and comments).</li>
+                                    <li><b>Database & Persistence:</b> Utilized <b>MySQL</b> for complex relational data modeling, covering user profiles, hotel inventory, and travel strategy archives.</li>
+                                    <li><b>Deployment & Environment:</b> Managed the application lifecycle on <b>Apache Tomcat</b>, ensuring stable HTTP request handling and efficient data retrieval.</li>"
+                            data-zh="<li><b>架构设计：</b> 采用 <b>MVC (模型-视图-控制器)</b> 设计模式，结合 Java、JSP 及 JavaScript 开发，确保了系统的高内聚与低耦合。</li>
+                                    <li><b>多角色权限系统：</b> 为 <b>管理员</b>（内容审核、目的地完善、首页运营）与 <b>普通用户</b>（游记发布、酒店预订）设计了差异化的功能权限模块。</li>
+                                    <li><b>核心功能模块：</b> 实现了“当季推荐城市”动态更新、智能目的地检索以及游记互动系统（支持点赞与评论功能）。</li>
+                                    <li><b>数据库与持久化：</b> 使用 <b>MySQL</b> 进行复杂的关系型数据建模，涵盖用户信息、酒店库存及攻略文档的存储与查询优化。</li>
+                                    <li><b>部署与运行：</b> 采用 <b>Apache Tomcat</b> 服务器进行环境搭建与部署，确保了 HTTP 请求的稳定响应与数据的高效交互。</li>">
+                            <li><b>Architectural Design:</b> Developed using the <b>MVC (Model-View-Controller)</b> pattern with Java, JSP, and JS, ensuring high cohesion and low coupling of the system.</li>
+                            <li><b>Multi-Role Permission System:</b> Designed distinct functional modules for <b>Administrators</b> (content auditing, destination management, user control) and <b>General Users</b> (strategy sharing, hotel booking).</li>
+                            <li><b>Core Functional Modules:</b> Implemented dynamic 'Seasonal Recommended Cities', intelligent destination retrieval, and a travelogue interaction system (support for likes and comments).</li>
+                            <li><b>Database & Persistence:</b> Utilized <b>MySQL</b> for complex relational data modeling, covering user profiles, hotel inventory, and travel strategy archives.</li>
+                            <li><b>Deployment & Environment:</b> Managed the application lifecycle on <b>Apache Tomcat</b>, ensuring stable HTTP request handling and efficient data retrieval.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="experience-item">
-                    <h3 data-en="Westlake University" data-zh="西湖大学">Westlake University</h3>
-                    <p data-en="Rule Discovery in Physical Data" data-zh="物理数据中的规律发现">Rule Discovery in Physical Data</p>
-                    <ul data-en="<li>Built transformer-based models for symbolic regression.</li><li>Explored pattern discovery in physical videos.</li>"
-                        data-zh="<li>构建了基于 Transformer 的符号回归模型。</li><li>探索了从视频中发现物理系统模式的科研任务。</li>">
-                        <li>Built transformer-based models for symbolic regression.</li>
-                        <li>Explored pattern discovery in physical videos.</li>
-                    </ul>
+                <div class="project-item">
+                    <div class="details">
+                        <h3 data-en="Simulated Food Delivery Platform (GUI Application)" 
+                            data-zh="模拟外卖订餐平台 (GUI 图形界面程序)">
+                            Simulated Food Delivery Platform (GUI Application)
+                        </h3>
+                        <p data-en="Java GUI Development & System Integration" 
+                           data-zh="Java GUI 界面开发与系统集成">
+                            Java GUI Development & System Integration
+                        </p>
+                        <p class="date">05/2025</p>
+                    </div>
+    
+                    <div class="content">
+                        <ul data-en="<li><b>GUI Architecture:</b> Designed and developed a multi-terminal graphical user interface (GUI) using <b>JavaFX/SWT</b>, providing an intuitive interactive experience for Users, Merchants, and Couriers.</li>
+                                    <li><b>Event-Driven Logic:</b> Developed robust event handling mechanisms to manage user actions such as order placement, menu editing, and multi-role login transitions.</li>
+                                    <li><b>Database Integration:</b> Connected the GUI frontend with a <b>MySQL</b> backend to ensure seamless data flow for menu items, user profiles, and transaction records.</li>
+                                    <li><b>User Experience (UX) Optimization:</b> Optimized the interface layout and navigation flow, ensuring data integrity through form validation and structured error feedback.</li>"
+                            data-zh="<li><b>GUI 架构设计：</b> 使用 <b>JavaFX/SWT</b> 规划并开发了多端图形用户界面，为用户、商家及配送员提供了直观的交互体验。</li>
+                                    <li><b>事件驱动逻辑：</b> 编写了完善的事件处理机制，用于响应下单、菜单编辑及多角色登录切换等用户交互行为。</li>
+                                    <li><b>前后端数据联动：</b> 将 GUI 前端与 <b>MySQL</b> 数据库集成，实现了菜品信息、用户信息及交易记录的无缝数据流转。</li>
+                                    <li><b>用户体验 (UX) 优化：</b> 优化了界面布局与导航逻辑，并通过表单校验与结构化错误反馈机制确保了操作的准确性。</li>">
+                            <li><b>GUI Architecture:</b> Designed a multi-terminal graphical user interface using JavaFX/SWT.</li>
+                            <li><b>Event-Driven Logic:</b> Developed handling mechanisms for user actions and role transitions.</li>
+                            <li><b>Database Integration:</b> Connected the GUI frontend with MySQL for seamless data flow.</li>
+                            <li><b>User Experience Optimization:</b> Optimized layout and navigation with robust data validation.</li>
+                        </ul>
+                    </div>
                 </div>
+
             </section>
 
             <section>
                 <h2 data-en="🏆 Awards" data-zh="🏆 荣誉奖项">🏆 Awards</h2>
-                <ul class="awards-list" data-en="<li>ICPC Asia Regional Contest Bronze Medal 🥉</li><li>ASC Supercomputer Challenge National Second Prize 🥈</li><li>Lanqiao Cup C++ Programming National Third Prize 🥉</li>"
-                                      data-zh="<li>ICPC 亚洲区域赛 铜奖 🥉</li><li>ASC 世界大学生超级计算机竞赛 全国二等奖 🥈</li><li>蓝桥杯 C++ 程序设计全国三等奖 🥉</li>">
+                <ul class="awards-list" data-en="<li>ICPC Asia Regional Contest Bronze Medal 🥉</li><li>ASC Supercomputer Challenge National Second Prize 🥈</li>"
+                                      data-zh="<li>ICPC 亚洲区域赛 铜奖 🥉</li><li>ASC 世界大学生超级计算机竞赛 全国二等奖 🥈</li>">
                     <li>ICPC Asia Regional Contest Bronze Medal 🥉</li>
                     <li>ASC Supercomputer Challenge National Second Prize 🥈</li>
-                    <li>Lanqiao Cup C++ Programming National Third Prize 🥉</li>
                 </ul>
+            </section>
+
+            <section>
+                <h2 data-en="📚 Papers" data-zh="📚 发表论文">📚 Papers</h2>
+                <div class="papers-item">
+                    <p data-en="[1] Research on Human Preference Based on ERP Components (First Author, Under Review)."
+                       data-zh="[1] 基于 ERP 组件的人类偏好研究 (第一作者, 在投)。">
+                        [1] Research on Human Preference Based on ERP Components (First Author, Under Review).
+                    </p>
+                </div>
             </section>
 
             <section>
                 <h2 data-en="🛠️ Skills" data-zh="🛠️ 技能专长">🛠️ Skills</h2>
                 <ul class="skills-list">
-                    <li data-en="<strong>Languages:</strong> Python, C++, HTML, LaTeX" data-zh="<strong>编程语言:</strong> Python, C++, HTML, LaTeX"><strong>Languages:</strong> Python, C++, HTML, LaTeX</li>
-                    <li data-en="<strong>AI Tools:</strong> PyTorch, Transformers, vLLM" data-zh="<strong>AI 工具:</strong> PyTorch, Transformers, vLLM"><strong>AI Tools:</strong> PyTorch, Transformers, vLLM</li>
+                    <li data-en="<strong>Programming:</strong> Java(Advanced), SQL(Advanced), Python(Proficient), HTML(Proficient), CSS(Familiar), JavaScript(Familiar)" data-zh="<strong>编程语言:</strong> Java(精通), SQL(精通), Python(熟练), HTML(熟练), CSS(熟悉), JavaScript(熟悉)"><strong>Programming:</strong> Java(Advanced), SQL(Advanced), Python(Proficient), HTML(Proficient), CSS(Familiar), JavaScript(Familiar)</li>
+                    <li data-en="<strong>Big Data:</strong> Hadoop(Advanced), Spark(Advanced), Data Mining(Familiar)" data-zh="<strong>大数据技术:</strong> Hadoop(精通), Spark(精通), 数据挖掘(熟悉)"><strong>Big Data:</strong> Hadoop(Advanced), Spark(Advanced), Data Mining(Familiar)</li>
                 </ul>
             </section>
         </div>
