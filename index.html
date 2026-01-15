@@ -180,7 +180,7 @@
 
     <footer>
         <div class="container">
-            <p data-en="&copy; 2026 Xinling Li. All rights reserved." data-zh="&copy; 2026 李昕玲。版权所有。">&copy; 2026 Xinling Li. All rights reserved.</p>
+            <p>&copy; 2026 Xinling Li. All rights reserved.</p>
         </div>
     </footer>
 
@@ -192,7 +192,7 @@
 
         langToggle.addEventListener('click', () => {
             currentLang = currentLang === 'en' ? 'zh' : 'en';
-            langToggle.textContent = currentLang === 'en' ? '中文' : 'English';
+            langToggle.textContent = currentLang === 'en' ? '中' : 'En';
             
             document.querySelectorAll('[data-en]').forEach(el => {
                 el.innerHTML = el.getAttribute(`data-${currentLang}`);
