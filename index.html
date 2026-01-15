@@ -1,92 +1,163 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 100vh;
-            background: #e3f2fd;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 60px 50px;
-            width: 90%;
-            max-width: 420px;
-            box-shadow: 0 8px 24px rgba(179, 229, 252, 0.4);
-            text-align: center;
-        }
-
-        .logo {
-            width: 60px;
-            height: 60px;
-            background: #81d4fa;
-            border-radius: 50%;
-            margin: 0 auto 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        h1 {
-            color: #0288d1;
-            font-size: 28px;
-            font-weight: 400;
-            margin-bottom: 12px;
-        }
-
-        p {
-            color: #4fc3f7;
-            font-size: 16px;
-            margin-bottom: 40px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #29b6f6;
-            color: #ffffff;
-            padding: 14px 0;
-            width: 160px;
-            border-radius: 6px;
-            font-size: 16px;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #0288d1;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 13px;
-            color: #81d4fa;
-        }
-    </style>
+    <title>Xinling Li (李昕玲)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
 </head>
 <body>
-    <div class="card">
-        <div class="logo">L</div>
-        <h1>欢迎</h1>
-        <p> </p>
-        <a href="#" class="btn">进入</a>
-        
-    </div>
+    <header>
+        <div class="container header-container">
+            <button id="lang-toggle" class="theme-toggle">中文</button>
+            <div class="profile-info">
+                <h1 id="main-name">Xinling Li <span class="chinese-name">(李昕玲)</span></h1>
+                <p class="subtitle"><b data-en="🤖 Artificial Intelligence Student" data-zh="🤖 人工智能专业学生">🤖 Artificial Intelligence Student</b></p>
+                <p><span class="icon">📞</span> <span data-en="Tel: " data-zh="电话: ">Tel: </span>(+86) 13815397394</p>
+                <p><span class="icon">✉️</span> <span data-en="Email: " data-zh="邮箱: ">Email: </span><a href="mailto:1793706453@qq.com">1793706453@qq.com</a></p>
+                <p><span class="icon">💬</span> <span data-en="WeChat: " data-zh="微信: ">WeChat: </span>abcdefghi314159</p>
+                <div class="links">
+                    <a href="https://github.com/liaoyanqing666" target="_blank" class="button">🐱 GitHub</a>
+                    <a href="files/resume.pdf" target="_blank" class="button" data-en="📄 Resume" data-zh="📄 个人简历">📄 Resume</a>
+                    <a href="files/undergraduate transcript.pdf" target="_blank" class="button" data-en="📝 Transcript" data-zh="📝 成绩单">📝 Transcript</a>
+                    <a href="files/undergraduate grade and ranking.pdf" target="_blank" class="button" data-en="🎓 GPA Certificate" data-zh="🎓 GPA/排名证明">🎓 GPA Certificate</a>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <img src="images/photo2.jpg" class="carousel-image active" alt="Xinling Li Photo 1">
+                <img src="images/photo3.jpg" class="carousel-image" alt="Xinling Li Photo 2">
+                <img src="images/photo4.jpg" class="carousel-image" alt="Xinling Li Photo 3">
+                <img src="images/photo1.jpg" class="carousel-image" alt="Xinling Li Photo 4">
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <p data-en="I am Xinling Li, an incoming Ph.D. student in Computer Science at the University of Georgia. I earned my Bachelor's degree in Artificial Intelligence from Shanghai University, graduating first in my major. I prefer to explore, learn, and create things from scratch." 
+               data-zh="我是李昕玲，佐治亚大学（UGA）计算机科学系准博士生。我本科毕业于上海大学人工智能专业，排名专业第一。我热衷于从零开始探索、学习并创造，而非仅仅依赖现成的方案。">
+                I am Xinling Li, an incoming Ph.D. student in Computer Science at the University of Georgia. I earned my Bachelor's degree in Artificial Intelligence from Shanghai University, graduating first in my major. I prefer to explore, learn, and create things from scratch.
+            </p>
+            <p data-en="My research interests are primarily focused on model architecture and algorithmic innovation, specifically in (Multimodal) LLMs and AI for Science. I view scientific data as a distinct modality and strive to bridge existing knowledge with new domains."
+               data-zh="我的研究兴趣主要集中在模型架构与算法创新，特别是（多模态）大模型和科学人工智能。我将科学数据视为一种独特的模态，致力于将现有知识跨领域连接。">
+                My research interests are primarily focused on model architecture and algorithmic innovation, specifically in (Multimodal) LLMs and AI for Science. I view scientific data as a distinct modality and strive to bridge existing knowledge with new domains.
+            </p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2 data-en="🎓 Education" data-zh="🎓 教育背景">🎓 Education</h2>
+                <div class="education-item">
+                    <h3 data-en="University of Georgia (UGA)" data-zh="佐治亚大学 (UGA)">University of Georgia (UGA)</h3>
+                    <p data-en="Ph.D. Student in Computer Science" data-zh="计算机科学博士生">Ph.D. Student in Computer Science</p>
+                    <p class="date">01/2026 - 06/2030</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3 data-en="Shanghai University (SHU)" data-zh="上海大学 (SHU)">Shanghai University (SHU)</h3>
+                    <p data-en="B.E. in Artificial Intelligence" data-zh="人工智能工学学士">B.E. in Artificial Intelligence</p>
+                    <p class="date">09/2021 - 06/2025</p>
+                    <p><strong>GPA:</strong> 3.81/4.0 | <strong data-en="Ranking: 1/52" data-zh="排名：1/52">Ranking: 1/52</strong></p>
+                </div>
+            </section>
+
+            <section>
+                <h2 data-en="🔬 Research Internship" data-zh="🔬 研究实习经历">🔬 Research Internship</h2>
+                <div class="experience-item">
+                    <h3 data-en="Guangming Laboratory" data-zh="光明实验室">Guangming Laboratory</h3>
+                    <p data-en="Advisor: Dr. Wenhao Jiang | Medical LLMs" data-zh="导师：蒋文豪博士 | 医疗大模型">Advisor: Dr. Wenhao Jiang | Medical LLMs</p>
+                    <ul data-en="<li>Developed a fully automated Supervised Fine-Tuning (SFT) pipeline.</li><li>Proposed answer-guided self-distillation to enhance clinical reasoning.</li>"
+                        data-zh="<li>开发了全自动有监督微调（SFT）流水线。</li><li>提出答案引导的自蒸馏机制，显著提升医疗复杂场景下的逻辑推理。</li>">
+                        <li>Developed a fully automated Supervised Fine-Tuning (SFT) pipeline.</li>
+                        <li>Proposed answer-guided self-distillation to enhance clinical reasoning.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 data-en="Huawei (Ascend Computing)" data-zh="华为（昇腾计算）">Huawei (Ascend Computing)</h3>
+                    <p data-en="AI Intern | 12/2024 - 03/2025" data-zh="AI 实习生 | 2024年12月 - 2025年3月">AI Intern | 12/2024 - 03/2025</p>
+                    <ul data-en="<li>Contributed to vLLM open-source (Issue #11978, PR #11979).</li><li>Migrated vLLM to Ascend NPU platform.</li>"
+                        data-zh="<li>为 vLLM 开源社区贡献代码（Issue #11978, PR #11979）。</li><li>负责 vLLM 在昇腾 NPU 平台上的适配与算子迁移。</li>">
+                        <li>Contributed to vLLM open-source (Issue #11978, PR #11979).</li>
+                        <li>Migrated vLLM to Ascend NPU platform.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 data-en="Westlake University" data-zh="西湖大学">Westlake University</h3>
+                    <p data-en="Rule Discovery in Physical Data" data-zh="物理数据中的规律发现">Rule Discovery in Physical Data</p>
+                    <ul data-en="<li>Built transformer-based models for symbolic regression.</li><li>Explored pattern discovery in physical videos.</li>"
+                        data-zh="<li>构建了基于 Transformer 的符号回归模型。</li><li>探索了从视频中发现物理系统模式的科研任务。</li>">
+                        <li>Built transformer-based models for symbolic regression.</li>
+                        <li>Explored pattern discovery in physical videos.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 data-en="🏆 Awards" data-zh="🏆 荣誉奖项">🏆 Awards</h2>
+                <ul class="awards-list" data-en="<li>ICPC Asia Regional Contest Bronze Medal 🥉</li><li>ASC Supercomputer Challenge National Second Prize 🥈</li><li>Lanqiao Cup C++ Programming National Third Prize 🥉</li>"
+                                      data-zh="<li>ICPC 亚洲区域赛 铜奖 🥉</li><li>ASC 世界大学生超级计算机竞赛 全国二等奖 🥈</li><li>蓝桥杯 C++ 程序设计全国三等奖 🥉</li>">
+                    <li>ICPC Asia Regional Contest Bronze Medal 🥉</li>
+                    <li>ASC Supercomputer Challenge National Second Prize 🥈</li>
+                    <li>Lanqiao Cup C++ Programming National Third Prize 🥉</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 data-en="🛠️ Skills" data-zh="🛠️ 技能专长">🛠️ Skills</h2>
+                <ul class="skills-list">
+                    <li data-en="<strong>Languages:</strong> Python, C++, HTML, LaTeX" data-zh="<strong>编程语言:</strong> Python, C++, HTML, LaTeX"><strong>Languages:</strong> Python, C++, HTML, LaTeX</li>
+                    <li data-en="<strong>AI Tools:</strong> PyTorch, Transformers, vLLM" data-zh="<strong>AI 工具:</strong> PyTorch, Transformers, vLLM"><strong>AI Tools:</strong> PyTorch, Transformers, vLLM</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-en="&copy; 2026 Xinling Li. All rights reserved." data-zh="&copy; 2026 李昕玲。版权所有。">&copy; 2026 Xinling Li. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 语言切换逻辑
+        const langToggle = document.getElementById('lang-toggle');
+        const mainName = document.getElementById('main-name');
+        let currentLang = 'en';
+
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            langToggle.textContent = currentLang === 'en' ? '中文' : 'English';
+            
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.innerHTML = el.getAttribute(`data-${currentLang}`);
+            });
+
+            if (currentLang === 'zh') {
+                mainName.innerHTML = '李昕玲 <span class="chinese-name">(Xinling Li)</span>';
+            } else {
+                mainName.innerHTML = 'Xinling Li <span class="chinese-name">(李昕玲)</span>';
+            }
+        });
+
+        let currentSlide = 0;
+        function changeSlide(direction) {
+            const slides = document.querySelectorAll('.carousel-image');
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
 </body>
 </html>
