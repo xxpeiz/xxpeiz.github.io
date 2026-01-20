@@ -1,7 +1,6 @@
-if (window.location.hostname !== 'siyuanli.tech' && 
-    window.location.hostname !== 'www.siyuanli.tech' &&
-    // window.location.hostname !== '127.0.0.1' &&
-    window.location.hostname !== 'liaoyanqing666.github.io') {
+if (window.location.hostname !== 'xxpeiz.github.io' && 
+    window.location.hostname !== 'www.xxpeiz.github.io' &&
+    window.location.hostname !== '127.0.0.1' ) {
   console.log("skip record");
 } else {
   const firebaseConfig = {
